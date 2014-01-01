@@ -9,8 +9,8 @@ add = "git add a"
 com = "git commit -m green"
 
 for k in [14]:
-    for j in range(4,5):
-        for  i in range(1, 20):
+    for j in range(1,5):
+        for  i in range(1, 32):
             d = ""
             m = ""
             y = ""
@@ -30,6 +30,7 @@ for k in [14]:
 
             print cmd %(m,d,y)
             os.system(cmd %(m, d, y))
-            os.system(ech % l)
-            os.system(add)
-            os.system(com)
+            for z in range(1,4):
+                os.system(ech % l)
+                os.system(add)
+                os.system(com)
